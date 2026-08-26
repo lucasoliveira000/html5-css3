@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        h1{
+            width:500px ;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #808282;
+            text-align: center;
+            box-shadow: 5px 3px 7px 1px #00000092 ; 
+
+
+        }
+         header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #6c6f6f;
+            margin: 0px;
+        }
+       
+        nav{
+            background-color: #767b7b;
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px #00000092 ;
+            
+        }
+        nav > a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 30px;
+
+            
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 40px;
+            box-shadow: 5px 3px 7px 1px #0000004b ;
+        }
+        
+        article{
+            background-color: #c7caca;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(138, 139, 139);
+        }
+        footer{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes | Politica | Tecnologia |</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolor amet maiores molestiae! Autem obcaecati mollitia maxime vitae harum labore quisquam eveniet cumque. Quia amet excepturi hic eaque iste! Aliquid.</p>
+                <aside>Escrito por Antonio Lucas</aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por cursoemvideo</p>
+    </footer>
+    <p><a href="caixa01.html">pagina 01</a></p>
+</body>
+</html>
