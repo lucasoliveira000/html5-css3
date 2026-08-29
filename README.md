@@ -5,4 +5,3 @@ estou aprendendo a gerenciar meus repositorios!
 
 <a href=" https://lucasoliveira000.github.io/html5-css3/exercicios/ex001/index.html">Executar o exercicio 001</a>.
 
-ateracao de teste!
