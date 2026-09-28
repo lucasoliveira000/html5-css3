@@ -9,6 +9,13 @@
     --fonte1: font-family: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: "Passion One", cursive;
     --fonte3: "Sriracha", cursive;
+    --cor0:#ffffff;
+    --cor1:#a9a9a9; 
+    --cor2:#000000;
+    --cor3:#3e3e3e;
+    --cor4:#00000096;
+
+
 }
 
 
@@ -20,12 +27,12 @@
 html,body{
     font-family: var(--fonte1);
     min-height: 100vh;
-    background-color: darkgray;;
+    background-color: var(--cor1)
 }
 
 header{
-    background-color: black;
-    color: white;
+    background-color: var(--cor2);
+    color: var(--cor0);
     text-align: center;
 }
 
@@ -42,7 +49,7 @@ header > p{
 }
 
 header a, footer a{
-    color: white;
+    color: var(--cor0);
     text-decoration: none;
     font-weight: bolder;
 }
@@ -65,14 +72,14 @@ section > p{
 }
 
 section.normal{
-    background-color: white;
+    background-color: var(--cor0);
     color: black;
 }
 
 section.imagem{
-    background-color: rgb(62, 62, 62);
-    color: white;
-    box-shadow: inset 3px 3px 13px 0px black;
+    background-color: var(--cor3);
+    color: var(--cor0);
+    box-shadow: inset 3px 3px 13px 0px var(--cor2);
     background-attachment: fixed;
     
 }
@@ -80,8 +87,8 @@ section.imagem{
 section.imagem  p{
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.438);
-    text-shadow: 1px 1px 0px black;
+    background-color: var(--cor4);
+    text-shadow: 1px 1px 0px var(--cor2);
 
 
 }
@@ -98,8 +105,8 @@ section#img02{
 }
 
 footer{
-    background-color: black;
-    color: white;
+    background-color: var(--cor2);
+    color: var(--cor0);
     text-align: center;
     padding: 10px;
 }
