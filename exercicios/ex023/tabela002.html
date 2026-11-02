@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        table{
+            position: relative;
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+
+        tbody > tr:nth-child(2n-1) {
+            background-color: white;
+        }
+
+        td,th{
+            border: 1px solid black ;
+            padding: 20px;
+        }
+
+        td.num{
+            text-align: right;
+            width: 100px;
+        }
+
+
+
+        thead,tfoot{
+            background-color:rgb(49, 49, 49) ;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color:rgb(49, 49, 49) ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <table>
+        <caption>População da Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 889 472</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 952 456</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 233 317</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 583 176</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 302 211</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 756 324</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 312 759</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 495 033	</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 024 557</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 360 926</td>
+            </tr>
+
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4 182 828</td>
+            </tr>
+
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 150 692</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>185.596.534</strong></td>
+            </tr>
+        </tfoot>
+    </table>~
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias, et dolor modi error iusto minus, cupiditate voluptas ab exercitationem laboriosam qui praesentium eos consequuntur fugit, minima deleniti optio ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit id pariatur quaerat quis accusamus consequatur amet minima sunt sed, accusantium libero, ad, corporis ipsam ratione quisquam nesciunt harum provident est. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit odio pariatur cupiditate fuga et, rem commodi corporis. Dicta hic architecto maxime veritatis aliquid. Distinctio explicabo adipisci sint dolorem! Repellendus, accusamus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti perferendis, fuga aliquam aspernatur blanditiis tempora doloremque dolore inventore ducimus iste ab voluptas, magnam ullam asperiores doloribus consectetur minima deleniti.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias, et dolor modi error iusto minus, cupiditate voluptas ab exercitationem laboriosam qui praesentium eos consequuntur fugit, minima deleniti optio ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit id pariatur quaerat quis accusamus consequatur amet minima sunt sed, accusantium libero, ad, corporis ipsam ratione quisquam nesciunt harum provident est. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit odio pariatur cupiditate fuga et, rem commodi corporis. Dicta hic architecto maxime veritatis aliquid. Distinctio explicabo adipisci sint dolorem! Repellendus, accusamus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti perferendis, fuga aliquam aspernatur blanditiis tempora doloremque dolore inventore ducimus iste ab voluptas, magnam ullam asperiores doloribus consectetur minima deleniti.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias, et dolor modi error iusto minus, cupiditate voluptas ab exercitationem laboriosam qui praesentium eos consequuntur fugit, minima deleniti optio ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit id pariatur quaerat quis accusamus consequatur amet minima sunt sed, accusantium libero, ad, corporis ipsam ratione quisquam nesciunt harum provident est. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit odio pariatur cupiditate fuga et, rem commodi corporis. Dicta hic architecto maxime veritatis aliquid. Distinctio explicabo adipisci sint dolorem! Repellendus, accusamus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti perferendis, fuga aliquam aspernatur blanditiis tempora doloremque dolore inventore ducimus iste ab voluptas, magnam ullam asperiores doloribus consectetur minima deleniti.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias, et dolor modi error iusto minus, cupiditate voluptas ab exercitationem laboriosam qui praesentium eos consequuntur fugit, minima deleniti optio ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit id pariatur quaerat quis accusamus consequatur amet minima sunt sed, accusantium libero, ad, corporis ipsam ratione quisquam nesciunt harum provident est. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit odio pariatur cupiditate fuga et, rem commodi corporis. Dicta hic architecto maxime veritatis aliquid. Distinctio explicabo adipisci sint dolorem! Repellendus, accusamus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti perferendis, fuga aliquam aspernatur blanditiis tempora doloremque dolore inventore ducimus iste ab voluptas, magnam ullam asperiores doloribus consectetur minima deleniti.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias, et dolor modi error iusto minus, cupiditate voluptas ab exercitationem laboriosam qui praesentium eos consequuntur fugit, minima deleniti optio ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit id pariatur quaerat quis accusamus consequatur amet minima sunt sed, accusantium libero, ad, corporis ipsam ratione quisquam nesciunt harum provident est. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit odio pariatur cupiditate fuga et, rem commodi corporis. Dicta hic architecto maxime veritatis aliquid. Distinctio explicabo adipisci sint dolorem! Repellendus, accusamus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti perferendis, fuga aliquam aspernatur blanditiis tempora doloremque dolore inventore ducimus iste ab voluptas, magnam ullam asperiores doloribus consectetur minima deleniti.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias, et dolor modi error iusto minus, cupiditate voluptas ab exercitationem laboriosam qui praesentium eos consequuntur fugit, minima deleniti optio ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit id pariatur quaerat quis accusamus consequatur amet minima sunt sed, accusantium libero, ad, corporis ipsam ratione quisquam nesciunt harum provident est. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit odio pariatur cupiditate fuga et, rem commodi corporis. Dicta hic architecto maxime veritatis aliquid. Distinctio explicabo adipisci sint dolorem! Repellendus, accusamus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti perferendis, fuga aliquam aspernatur blanditiis tempora doloremque dolore inventore ducimus iste ab voluptas, magnam ullam asperiores doloribus consectetur minima deleniti.</p>
+</body>
+</html>
