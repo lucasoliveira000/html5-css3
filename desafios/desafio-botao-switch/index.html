@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criando botao switch</title>
+    <style>
+        .interruptor{
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+
+
+        }
+
+        .interruptor > input{
+            opacity: 0;
+            width: 0    ;
+            height: 0;
+
+        }
+
+        .conteudo-botao{
+            position: absolute;
+            cursor: pointer;
+            inset: 0;
+            background-color: #ccc;
+            border-radius: 40px;
+            transition: 0,10s;
+        }
+
+        .conteudo-botao::before{
+            background-color: white;
+            position: absolute;
+            content: "";
+            width: 90px;
+            height: 90px;
+            left: 10px;
+            bottom: 5px;
+            border-radius: 50%;
+            transition: 0,10s;
+        }
+
+        .interruptor > input:checked + .conteudo-botao{
+            background-color: green;
+        }
+
+        .interruptor > input:checked + .conteudo-botao::before{
+            transform: translateX(90px);
+        }
+
+    </style>
+</head>
+<body>
+    <label class="interruptor">
+        <input type="checkbox">
+        <span class="conteudo-botao"></span>
+        
+    </label>
+</body>
+</html>
